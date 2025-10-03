@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Buy Me Button</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: Arial, sans-serif;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Me Button</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
 
-    .buy-button {
-      width: 120px;
-      height: 120px;
-      background-color: #ff4081;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      font-size: 1.2em;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      transition: background-color 0.3s, transform 0.2s;
-    }
+      .buy-button {
+        width: 120px;
+        height: 120px;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.2s;
+      }
 
-    .buy-button:hover {
-      background-color: #e73370;
-      transform: scale(1.05);
-    }
+      .buy-button:hover {
+        background-color: #e73370;
+        transform: scale(1.05);
+      }
 
-    .buy-button:active {
-      transform: scale(0.95);
-    }
-  </style>
-</head>
-<body>
-  <button class="buy-button" onclick="buyClicked()">Buy Me</button>
-
-  <script>
-    function buyClicked() {
-      alert("Thanks for clicking 'Buy Me'!");
-    }
-  </script>
-</body>
+      .buy-button:active {
+        transform: scale(0.95);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="buy-button" id="buy_now_btn">Buy Me</button>
+    <script>
+      src = "{{ url_for('static', filename='main.js') }}";
+    </script>
+  </body>
 </html>
-
