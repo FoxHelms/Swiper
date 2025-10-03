@@ -53,3 +53,4 @@ A distributed payment-as-a-microservice system.
 ## TODO
 [ ] Create coinbase + eth test wallet 
 [ ] Research kafka integration
+[ ] Service monitoring + alert sim with prometheus
